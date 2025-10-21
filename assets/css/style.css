@@ -1,0 +1,31 @@
+#player {
+  background-color: black;
+  color: white;
+  border-radius: 1.5rem;
+  height: 5rem;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btnPlay {
+  display: flex;
+  color:white;
+  padding: 1.2rem;
+  border-radius: 50%;
+}
+
+.btnPlay:hover {
+    background-color: rgba(255,255,255,0.3)
+}
+
+.btnPlay i {
+    font-size: 1.3rem;
+}
+.divBtn{
+padding: 2rem;
+}
+

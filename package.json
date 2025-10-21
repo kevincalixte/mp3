@@ -1,0 +1,22 @@
+{
+  "name": "mp3",
+  "version": "1.0.0",
+  "description": "Projet web - mp3",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "dev": "live-server --port=3000",
+    "build": "echo 'Build process here'"
+  },
+  "keywords": [
+    "html",
+    "css", 
+    "javascript",
+    "web"
+  ],
+  "author": "Votre Nom",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
