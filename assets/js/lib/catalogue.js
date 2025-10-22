@@ -43,6 +43,4 @@ const catalogue = [
  
 ];
 
-// console.log('init catalogue');
-
 export { catalogue };
