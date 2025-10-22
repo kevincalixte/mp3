@@ -11,18 +11,18 @@
   justify-content: flex-end;
 }
 
-.btnPlay {
-  display: flex;
+.buttonPlay, .buttonNext, .buttonLast {
+  /* display: flex; */
   color:white;
-  padding: 1.2rem;
-  border-radius: 50%;
+  padding: .5rem 1.5rem;
+  border-radius: 1rem;
 }
 
-.btnPlay:hover {
+.buttonPlay:hover, .buttonLast:hover,.buttonNext:hover {
     background-color: rgba(255,255,255,0.3)
 }
 
-.btnPlay i {
+.buttonPlay i,.buttonNext i,.buttonLast i {
     font-size: 1.3rem;
 }
 .divBtn{
