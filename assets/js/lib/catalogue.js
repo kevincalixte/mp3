@@ -25,7 +25,7 @@ const catalogue = [
     artiste: "Missy Elliott",
     genre: ["Hip Hop", "Funk/Soul"],
     annee: 2004,
-    cover: "workit-MissyElliott.jpg",
+    cover: "Nina Simone & Lauryn Hill - Fu-Gee-La feat. The Fugees (Prod. Amerigo Gazaway).jpg",
     audio: "eona-emotional-ambient-pop-351436.mp3",
     album: "Work It",
     like: false,

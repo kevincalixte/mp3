@@ -8,24 +8,115 @@
   margin-top: 10rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
-
-.buttonPlay, .buttonNext, .buttonLast {
-  /* display: flex; */
-  color:white;
-  padding: .5rem 1.5rem;
+.buttonPlay,
+.buttonNext,
+.buttonLast {
+  color: white;
+  padding: 0.5rem 1.5rem;
   border-radius: 1rem;
 }
-
-.buttonPlay:hover, .buttonLast:hover,.buttonNext:hover {
-    background-color: rgba(255,255,255,0.3)
+.buttonPlay:hover,
+.buttonLast:hover,
+.buttonNext:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.buttonPlay i,
+.buttonNext i,
+.buttonLast i {
+  font-size: 1.3rem;
+}
+.divBtn {
+  padding: 2rem;
 }
 
-.buttonPlay i,.buttonNext i,.buttonLast i {
-    font-size: 1.3rem;
+/* PLAYLIST */
+#playlist {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 2rem;
 }
-.divBtn{
-padding: 2rem;
+#playlist ul li {
+  margin: 1rem;
 }
 
+/* OTHER */
+.song {
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-left: 1rem;
+}
+.submenu {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-weight: bold;
+  border-radius: 2rem 0rem 0rem 2rem;
+  font-size: 0.7rem;
+}
+.submenu:hover {
+  opacity: 50%;
+}
+.submenu p {
+  display: flex;
+  gap: 0.5rem;
+}
+#diapo img {
+  width: 200px;
+  height: 200px;
+  /* width: 100%; */
+}
+#diapo {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  /* width: 90vw; */
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+#dessous {
+  /* background-color: red; */
+}
+#dessus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#titreDessus {
+  position: absolute;
+  z-index: 3;
+  top: 1rem;
+  left: 1rem;
+}
+#titreDessous {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+}
+.transition {
+  transition: all 1s;
+}
+.moveleft {
+  transform: translateX(-100%);
+}
+.moveright {
+  transform: translateX(100%);
+}

@@ -1,3 +1,4 @@
+import { catalogue } from "./catalogue.js";
 const initAudioManager = (url) => {
   const audio = new Audio("./assets/audio/" + url);
   return audio;
@@ -16,21 +17,21 @@ const playPause = () => {
 };
 
 // NEXT
-const nextTrack = (url) => {
+const nextTrack = () => {
   currentTrack++;
   if (currentTrack >= catalogueLength) {
     currentTrack = 0;
   }
 
   audio.pause();
-  audio.src = "./assets/audio/" + url;
-//   console.log("URL NEXT : " + url);
+  audio.src = "./assets/audio/" + catalogue[currentTrack].audio;
+  //   console.log("URL NEXT : " + url);
 
   audio.play();
 };
 
 // LAST
-const lastTrack = (url, catalogue) => {
+const lastTrack = () => {
   currentTrack--;
   if (currentTrack < 0) {
     currentTrack = catalogueLength - 1;
@@ -38,22 +39,26 @@ const lastTrack = (url, catalogue) => {
 
   audio.pause();
   audio.src = "./assets/audio/" + catalogue[currentTrack].audio;
-//   console.log("URL NEXT : " + url);
+  //   console.log("URL NEXT : " + url);
   audio.play();
 };
 
+// PLAY FROM PLAYLIST
+const playFromPlaylist = (url) => {
+  audio.pause();
+  audio.src = "./assets/audio/" + url;
+  audio.play();
+};
 // SLIDE
-const slider =() => {
-    const player = document.getElementById("player");
-    const h = new Hammer(player)
-    h.on("swipeleft swiperight"), (event) => {
-        console.log(event);    
-        if (event.type === "swipeleft") {
-
-        } else if (event.type === "swiperight") {
-
-        }
-    }
-    
-}
-export { initAudioManager, playPause, nextTrack, lastTrack};
+const slider = () => {
+  const player = document.getElementById("player");
+  const h = new Hammer(player);
+  h.on("swipeleft swiperight"),
+    (event) => {
+      console.log(event);
+      if (event.type === "swipeleft") {
+      } else if (event.type === "swiperight") {
+      }
+    };
+};
+export { initAudioManager, playPause, nextTrack, lastTrack, playFromPlaylist };
